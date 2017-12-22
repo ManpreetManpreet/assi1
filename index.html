@@ -1,0 +1,56 @@
+<!Doctype html>
+<html>
+    <head>
+        <title></title>
+           <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>     
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+                   <script src="slide.js"></script> 
+        <script src="cordova.js"></script>  
+         <script>
+            window.onload = function()
+        
+            {
+            document.getElementById('btnCalc').addEventListener('click',calcAge);
+            }
+            function calcAge(e)
+            {
+                var age=document.getElementById('dogAge').value;
+                age=age*7;
+                var result="In the dog's year, the age of your dog is  :"+age;
+                document.getElementById('result').innerHTML=result;
+            
+            }
+            </script>
+    
+    </head>
+        <body>
+            <div data-role="page">
+
+<div data-role="header">
+            <h1>Dog Age Calculator</h1>
+            </div><!--header-->
+            <div data-role="main" class="ui-content">
+         <label for="dogAge">Dog's Age in human Years:</label>
+        <input id="dogAge" type="number">
+        <button id="btnCalc">Calculate</button>
+        <div id="result"></div>
+        </div><!--main-->
+        <div data-role="footer">
+            
+        <div id="slideshow">
+   <div>
+     <img src="../images/dog1.jpg" height="95%" width="75%">
+   </div>
+   <div>
+     <img src="../images/dog2.jpg" height="95%" width="75%">
+   </div>
+   <h2></h2>
+</div>
+
+</div>
+    </body>
+</html>
+    
