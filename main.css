@@ -19,6 +19,8 @@ img
     margin: auto;
     padding-left:12%;   
     padding-right:15%;  
+    height: auto;
+ min-width: 100%;
 }
 h2
 {
